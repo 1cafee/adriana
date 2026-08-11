@@ -1,1 +1,88 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 11/08/2026
+Var
+// Seção de Declarações das variáveis 
+  P1, E1, E2, X, SUB, API, EXF: real
+  base, media: real
 
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+
+ escreval("===================================")
+   escreval("       CALCULADORA DE MEDIA")
+   escreval("===================================")
+   escreval("")
+
+   escreva("Nota da P1: ")
+   leia(P1)
+
+   escreva("Nota da E1: ")
+   leia(E1)
+
+   escreva("Nota da E2: ")
+   leia(E2)
+
+   escreva("Atividades Extras (0 a 1): ")
+   leia(X)
+
+   enquanto (X < 0) ou (X > 1) faca
+      escreval("ERRO: Atividades Extras devem estar entre 0 e 1.")
+      escreva("Digite novamente: ")
+      leia(X)
+   fimenquanto
+
+   escreva("Nota da Substitutiva: ")
+   leia(SUB)
+
+   escreva("Nota do API: ")
+   leia(API)
+
+   base <- P1 * 0.5 + E1 * 0.2 + E2 * 0.3 + X + SUB * 0.15
+
+   se base > 5.9 entao
+      media <- (base * 0.5) + (API * 0.5)
+   senao
+      media <- base * 0.5
+   fimse
+
+   escreval("")
+   escreval("Media antes do Exame Final: ", media:5:2)
+   escreval("")
+
+   se media >= 6.0 entao
+
+      escreval("ALUNO APROVADO!")
+      escreval("Nao e necessario realizar o Exame Final.")
+
+   senao
+
+      escreval("Aluno nao atingiu a media 6,0.")
+      escreval("Exame Final necessario.")
+      escreval("")
+
+      escreva("Nota do Exame Final: ")
+      leia(EXF)
+
+      se EXF > media entao
+         media <- EXF
+      fimse
+
+      escreval("")
+      escreval("Media final: ", media:5:2)
+
+      se media >= 6.0 entao
+         escreval("ALUNO APROVADO NO EXAME FINAL!")
+      senao
+         escreval("ALUNO REPROVADO.")
+      fimse
+
+   fimse
+
+   escreval("")
+   escreval("===================================")
+
+Fimalgoritmo
