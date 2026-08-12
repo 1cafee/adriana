@@ -1,88 +1,107 @@
 Algoritmo "semnome"
-// Disciplina   : [Linguagem e Lógica de Programação]
-// Professor   : Antonio Carlos Nicolodi 
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 11/08/2026
+// Disciplina : [Linguagem e Lógica de Programação]
+// Professor : Antonio Carlos Nicolodi
+// Descrição : Calculadora de média com opção de prova substitutiva
+// Autor(a) : Nome do(a) aluno(a)
+// Data atual : 11/08/2026
+
 Var
-// Seção de Declarações das variáveis 
-  P1, E1, E2, X, SUB, API, EXF: real
-  base, media: real
+// Seção de Declarações das variáveis
+P1, E1, E2, X, SUB, API, EXF: real
+base, media: real
+fezSUB: caractere
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+// Seção de Comandos, procedimento, funções, operadores, etc...
 
- escreval("===================================")
-   escreval("       CALCULADORA DE MEDIA")
-   escreval("===================================")
-   escreval("")
+escreval("===================================")
+escreval("       CALCULADORA DE MEDIA")
+escreval("===================================")
+escreval("")
 
-   escreva("Nota da P1: ")
-   leia(P1)
+escreva("Nota da P1: ")
+leia(P1)
 
-   escreva("Nota da E1: ")
-   leia(E1)
+escreva("Nota da E1: ")
+leia(E1)
 
-   escreva("Nota da E2: ")
-   leia(E2)
+escreva("Nota da E2: ")
+leia(E2)
 
-   escreva("Atividades Extras (0 a 1): ")
-   leia(X)
+escreva("Atividades Extras (0 a 1): ")
+leia(X)
 
-   enquanto (X < 0) ou (X > 1) faca
-      escreval("ERRO: Atividades Extras devem estar entre 0 e 1.")
-      escreva("Digite novamente: ")
-      leia(X)
-   fimenquanto
+enquanto (X < 0) ou (X > 1) faca
+escreval("ERRO: Atividades Extras devem estar entre 0 e 1.")
+escreva("Digite novamente: ")
+leia(X)
+fimenquanto
 
-   escreva("Nota da Substitutiva: ")
-   leia(SUB)
+escreva("Voce fez a prova substitutiva? (S/N): ")
+leia(fezSUB)
 
-   escreva("Nota do API: ")
-   leia(API)
+enquanto (fezSUB <> "S") e (fezSUB <> "s") e (fezSUB <> "N") e (fezSUB <> "n") faca
+escreval("ERRO: Digite somente S ou N.")
+escreva("Voce fez a prova substitutiva? (S/N): ")
+leia(fezSUB)
+fimenquanto
 
-   base <- P1 * 0.5 + E1 * 0.2 + E2 * 0.3 + X + SUB * 0.15
+se (fezSUB = "S") ou (fezSUB = "s") entao
+escreva("Nota da Substitutiva: ")
+leia(SUB)
+senao
+SUB <- 0
+fimse
 
-   se base > 5.9 entao
-      media <- (base * 0.5) + (API * 0.5)
-   senao
-      media <- base * 0.5
-   fimse
+escreva("Nota do API: ")
+leia(API)
 
-   escreval("")
-   escreval("Media antes do Exame Final: ", media:5:2)
-   escreval("")
+se (fezSUB = "S") ou (fezSUB = "s") entao
+base <- P1 * 0.5 + E1 * 0.2 + E2 * 0.3 + X + SUB * 0.15
+senao
+base <- P1 * 0.5 + E1 * 0.2 + E2 * 0.3 + X
+fimse
 
-   se media >= 6.0 entao
+se base > 5.9 entao
+media <- (base * 0.5) + (API * 0.5)
+senao
+media <- base * 0.5
+fimse
 
-      escreval("ALUNO APROVADO!")
-      escreval("Nao e necessario realizar o Exame Final.")
+escreval("")
+escreval("Media antes do Exame Final: ", media:5:2)
+escreval("")
 
-   senao
+se media >= 6.0 entao
 
-      escreval("Aluno nao atingiu a media 6,0.")
-      escreval("Exame Final necessario.")
-      escreval("")
+escreval("ALUNO APROVADO!")
+escreval("Nao e necessario realizar o Exame Final.")
 
-      escreva("Nota do Exame Final: ")
-      leia(EXF)
+senao
 
-      se EXF > media entao
-         media <- EXF
-      fimse
+escreval("Aluno nao atingiu a media 6,0.")
+escreval("Exame Final necessario.")
+escreval("")
 
-      escreval("")
-      escreval("Media final: ", media:5:2)
+escreva("Nota do Exame Final: ")
+leia(EXF)
 
-      se media >= 6.0 entao
-         escreval("ALUNO APROVADO NO EXAME FINAL!")
-      senao
-         escreval("ALUNO REPROVADO.")
-      fimse
+se EXF > media entao
+media <- EXF
+fimse
 
-   fimse
+escreval("")
+escreval("Media final: ", media:5:2)
 
-   escreval("")
-   escreval("===================================")
+se media >= 6.0 entao
+escreval("ALUNO APROVADO NO EXAME FINAL!")
+senao
+escreval("ALUNO REPROVADO.")
+fimse
+
+fimse
+
+escreval("")
+escreval("===================================")
 
 Fimalgoritmo
