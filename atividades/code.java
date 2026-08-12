@@ -1,0 +1,34 @@
+public class Main {//classe
+    double media; //atributo
+    public static void main(String[] args) {
+        // Basic math operations
+ double p1, e1, e2, x, sub, api, exf;
+ double base, diferenca, parte1, notaCalculada, notaFinal, parteApi;
+p1= 4.0;
+e1=6.0;
+e2=7.5;
+sub=10;
+api=8.7;
+x=0.6;
+exf=0.0;
+base=(p1*0.5)+(e1*0.2)+(e2*0.3)+x+(sub*0.15);
+parte1=base*0.5;
+diferenca=base-5.9;
+if(diferenca > 0) parteApi=api*0.5;
+else parteApi=0;
+notaCalculada=parte1+parteApi;
+if(notaCalculada >=6.0) {
+    notaFinal=notaCalculada;
+    System.out.println("Aluno aprovado, sem exf.");
+    }
+    else{
+        if(notaCalculada >= 4.0){
+            exf=8.0;
+            notaFinal=exf;
+            System.out.println ("Aluno aprovado, com exf.");
+            
+        }
+        else System.out.println ("Aluno não atingiu nota para exf.");
+    }
+    }
+    }
