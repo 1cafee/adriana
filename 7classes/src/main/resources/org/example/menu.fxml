@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
-
+<?import javafx.scene.layout.Region?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.MenuController">
    <children>
-      <Button fx:id="btn_aluguel" layoutX="119.0" layoutY="237.0" mnemonicParsing="false" onAction="#aluguel" prefHeight="34.0" prefWidth="151.0" text="Aluguel" />
-      <Button fx:id="btn_camelos" layoutX="119.0" layoutY="161.0" mnemonicParsing="false" onAction="#camelos" prefHeight="34.0" prefWidth="151.0" text="Camelos" />
-      <Button fx:id="btn_descontos" layoutX="119.0" layoutY="83.0" mnemonicParsing="false" onAction="#descontos" prefHeight="34.0" prefWidth="151.0" text="Descontos" />
-      <Button fx:id="btn_tempetura" layoutX="334.0" layoutY="237.0" mnemonicParsing="false" onAction="#temperatura" prefHeight="34.0" prefWidth="151.0" text="Temperatura" />
-      <Button fx:id="btn_senha" layoutX="334.0" layoutY="161.0" mnemonicParsing="false" onAction="#senha" prefHeight="34.0" prefWidth="151.0" text="Senha" />
-      <Button fx:id="btn_viagem" layoutX="334.0" layoutY="83.0" mnemonicParsing="false" onAction="#viagem" prefHeight="34.0" prefWidth="151.0" text="Viagem" />
-      <Button fx:id="btn_multiplo" layoutX="225.0" layoutY="300.0" mnemonicParsing="false" onAction="#multiplo" prefHeight="34.0" prefWidth="151.0" text="Multiplo" />
+      <Button fx:id="btn_aluguel" layoutX="119.0" layoutY="237.0" mnemonicParsing="false" onAction="#aluguel" prefHeight="34.0" prefWidth="151.0" style="-fx-background-radius: 8px;" text="Aluguel" />
+      <Button fx:id="btn_camelos" layoutX="119.0" layoutY="161.0" mnemonicParsing="false" onAction="#camelos" prefHeight="34.0" prefWidth="151.0" style="-fx-background-radius: 8px;" text="Camelos" />
+      <Button fx:id="btn_descontos" layoutX="119.0" layoutY="83.0" mnemonicParsing="false" onAction="#descontos" prefHeight="34.0" prefWidth="151.0" style="-fx-background-radius: 8px;" text="Descontos" />
+      <Button fx:id="btn_tempetura" layoutX="334.0" layoutY="237.0" mnemonicParsing="false" onAction="#temperatura" prefHeight="34.0" prefWidth="151.0" style="-fx-background-radius: 8px;" text="Temperatura" />
+      <Button fx:id="btn_senha" layoutX="334.0" layoutY="161.0" mnemonicParsing="false" onAction="#senha" prefHeight="34.0" prefWidth="151.0" style="-fx-background-radius: 8px;" text="Senha" />
+      <Button fx:id="btn_viagem" layoutX="334.0" layoutY="83.0" mnemonicParsing="false" onAction="#viagem" prefHeight="34.0" prefWidth="151.0" style="-fx-background-radius: 8px;" text="Viagem" />
+      <Button fx:id="btn_multiplo" layoutX="225.0" layoutY="300.0" mnemonicParsing="false" onAction="#multiplo" prefHeight="34.0" prefWidth="151.0" style="-fx-background-radius: 8px;" text="Multiplo" />
+      <MenuBar layoutY="-1.0" mouseTransparent="true" prefHeight="34.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Menu">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+               <graphic>
+                  <Region prefHeight="56.0" prefWidth="0.0" />
+               </graphic>
+          </Menu>
+        </menus>
+      </MenuBar>
    </children>
 </AnchorPane>

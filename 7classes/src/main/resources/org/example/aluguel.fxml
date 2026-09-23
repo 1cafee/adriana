@@ -10,29 +10,29 @@
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mouseTransparent="true" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.MultiploController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label layoutX="153.0" layoutY="100.0" text="Digite um número">
+      <Label layoutX="153.0" layoutY="100.0" text="Por quantos dias você alugou o carro?">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="153.0" layoutY="211.0" text="Digite outro número">
+      <Label layoutX="155.0" layoutY="211.0" text="Você andou quantos quilômetros com o carro?">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="txt_num1" layoutX="153.0" layoutY="120.0" prefHeight="25.0" prefWidth="295.0" promptText="Digite apenas números" />
-      <TextField fx:id="txt_num2" layoutX="153.0" layoutY="231.0" prefHeight="25.0" prefWidth="295.0" promptText="Digite apenas números" />
-      <Label layoutX="296.0" layoutY="280.0" text="...">
+      <TextField fx:id="txt_dias" layoutX="153.0" layoutY="120.0" prefHeight="25.0" prefWidth="295.0" promptText="Digite apenas números" />
+      <TextField fx:id="txt_kms" layoutX="153.0" layoutY="231.0" prefHeight="25.0" prefWidth="295.0" promptText="Digite apenas números" />
+      <Label layoutX="236.0" layoutY="286.0" text="O seu total ficou em:">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
       <Button fx:id="btn_voltar" layoutX="239.0" layoutY="329.0" mnemonicParsing="false" onAction="#voltar" prefHeight="35.0" prefWidth="122.0" style="-fx-background-radius: 8px;" text="Voltar" />
-      <MenuBar mouseTransparent="true" prefHeight="42.0" prefWidth="600.0">
+      <MenuBar layoutY="-2.0" mouseTransparent="true" prefHeight="42.0" prefWidth="600.0">
          <menus>
-            <Menu mnemonicParsing="false" text="Multiplos">
+            <Menu mnemonicParsing="false" text="Aluguel">
                <items>
                   <MenuItem mnemonicParsing="false" text="Close" />
                </items>

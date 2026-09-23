@@ -4,6 +4,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
+import java.io.IOException;
+
 public class MenuController {
 
     @FXML
@@ -28,38 +30,38 @@ public class MenuController {
     private Button btn_viagem;
 
     @FXML
-    void aluguel(ActionEvent event) {
-
+    void aluguel(ActionEvent event) throws IOException {
+        App.setRoot("aluguel");
     }
 
     @FXML
-    void camelos(ActionEvent event) {
-
+    void camelos(ActionEvent event) throws IOException {
+        App.setRoot("camelos");
     }
 
     @FXML
-    void descontos(ActionEvent event) {
-
+    void descontos(ActionEvent event) throws IOException {
+        App.setRoot("descontos");
     }
 
     @FXML
-    void multiplo(ActionEvent event) {
-
+    void multiplo(ActionEvent event) throws IOException {
+        App.setRoot("multiplo");
     }
 
     @FXML
-    void senha(ActionEvent event) {
-
+    void senha(ActionEvent event) throws IOException {
+        App.setRoot("senha");
     }
 
     @FXML
-    void temperatura(ActionEvent event) {
-
+    void temperatura(ActionEvent event) throws IOException {
+        App.setRoot("temperatura");
     }
 
     @FXML
-    void viagem(ActionEvent event) {
-
+    void viagem(ActionEvent event) throws IOException {
+        App.setRoot("viagem");
     }
 
 }

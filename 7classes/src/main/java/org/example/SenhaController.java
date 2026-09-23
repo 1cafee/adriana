@@ -3,20 +3,25 @@ package org.example;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
+import javafx.scene.control.Label;
 
 import java.io.IOException;
 
-public class MultiploController {
+public class SenhaController {
+
+    @FXML
+    private Button btn_entrar;
 
     @FXML
     private Button btn_voltar;
 
     @FXML
-    private TextField txt_num1;
+    private Label lbl_senharesult;
 
     @FXML
-    private TextField txt_num2;
+    void entrar(ActionEvent event) {
+
+    }
 
     @FXML
     void voltar(ActionEvent event) throws IOException {

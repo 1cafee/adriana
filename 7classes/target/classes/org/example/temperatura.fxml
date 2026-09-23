@@ -10,21 +10,15 @@
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mouseTransparent="true" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.MultiploController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mouseTransparent="true" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label layoutX="153.0" layoutY="100.0" text="Digite um número">
+      <Label layoutX="168.0" layoutY="151.0" text="Qual mês você deseja ver? Escolha de 1-12">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="153.0" layoutY="211.0" text="Digite outro número">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <TextField fx:id="txt_num1" layoutX="153.0" layoutY="120.0" prefHeight="25.0" prefWidth="295.0" promptText="Digite apenas números" />
-      <TextField fx:id="txt_num2" layoutX="153.0" layoutY="231.0" prefHeight="25.0" prefWidth="295.0" promptText="Digite apenas números" />
-      <Label layoutX="296.0" layoutY="280.0" text="...">
+      <TextField fx:id="txt_kms_viagem" layoutX="153.0" layoutY="188.0" prefHeight="25.0" prefWidth="295.0" promptText="Digite apenas números" />
+      <Label layoutX="239.0" layoutY="283.0" text="A temperatura esta:">
          <font>
             <Font size="14.0" />
          </font>
@@ -32,7 +26,7 @@
       <Button fx:id="btn_voltar" layoutX="239.0" layoutY="329.0" mnemonicParsing="false" onAction="#voltar" prefHeight="35.0" prefWidth="122.0" style="-fx-background-radius: 8px;" text="Voltar" />
       <MenuBar mouseTransparent="true" prefHeight="42.0" prefWidth="600.0">
          <menus>
-            <Menu mnemonicParsing="false" text="Multiplos">
+            <Menu mnemonicParsing="false" text="Temperatura">
                <items>
                   <MenuItem mnemonicParsing="false" text="Close" />
                </items>
