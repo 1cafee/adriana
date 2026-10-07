@@ -41,7 +41,7 @@ public class MenuController {
 
     @FXML
     void descontos(ActionEvent event) throws IOException {
-        App.setRoot("descontos");
+        App.setRoot("desconto");
     }
 
     @FXML

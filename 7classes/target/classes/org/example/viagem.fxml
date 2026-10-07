@@ -17,19 +17,19 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="155.0" layoutY="211.0" text="Quantos custa o litro de combustivel?">
+      <Label layoutX="155.0" layoutY="183.0" text="Quantos custa o litro de combustivel?">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
       <TextField fx:id="txt_kms_viagem" layoutX="153.0" layoutY="120.0" prefHeight="25.0" prefWidth="295.0" promptText="Digite apenas números" />
-      <TextField fx:id="txt_combustivel" layoutX="153.0" layoutY="231.0" prefHeight="25.0" prefWidth="295.0" promptText="Digite apenas números" />
-      <Label layoutX="239.0" layoutY="283.0" text="A viagem vai custar:">
+      <TextField fx:id="txt_combustivel" layoutX="153.0" layoutY="202.0" prefHeight="25.0" prefWidth="295.0" promptText="Digite apenas números" />
+      <Label fx:id="resultadoviagem" layoutX="239.0" layoutY="304.0" text="A viagem vai custar:">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Button fx:id="btn_voltar" layoutX="239.0" layoutY="329.0" mnemonicParsing="false" onAction="#voltar" prefHeight="35.0" prefWidth="122.0" style="-fx-background-radius: 8px;" text="Voltar" />
+      <Button fx:id="btn_voltar" layoutX="239.0" layoutY="344.0" mnemonicParsing="false" onAction="#voltar" prefHeight="35.0" prefWidth="122.0" style="-fx-background-radius: 8px;" text="Voltar" />
       <MenuBar mouseTransparent="true" prefHeight="42.0" prefWidth="600.0">
          <menus>
             <Menu mnemonicParsing="false" text="Viagem">
@@ -42,5 +42,6 @@
             </Menu>
          </menus>
       </MenuBar>
+      <Button fx:id="btn_calcular" layoutX="239.0" layoutY="248.0" mnemonicParsing="false" onAction="#calculaviagem" prefHeight="35.0" prefWidth="122.0" style="-fx-background-radius: 8px;" text="Calcular" />
    </children>
 </AnchorPane>

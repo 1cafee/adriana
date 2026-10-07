@@ -42,10 +42,10 @@ public class TemperaturaController {
                 lbl_mes.setText("Maio - 19C, Temperatura Agradavel");
                 break;
             case 6:
-                lbl_mes.setText("Junho - 18C, Temperatura Agradavel");
+                lbl_mes.setText("Junho - 18C, Frio");
                 break;
             case 7:
-                lbl_mes.setText("Julho - 18C, Temperatura Agradavel");
+                lbl_mes.setText("Julho - 18C, Frio");
                 break;
             case 8:
                 lbl_mes.setText("Agosto - 19C, Temperatura Agradavel");

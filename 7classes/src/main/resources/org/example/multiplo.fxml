@@ -17,19 +17,19 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="153.0" layoutY="211.0" text="Digite outro número">
+      <Label layoutX="153.0" layoutY="176.0" text="Digite outro número">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
       <TextField fx:id="txt_num1" layoutX="153.0" layoutY="120.0" prefHeight="25.0" prefWidth="295.0" promptText="Digite apenas números" />
-      <TextField fx:id="txt_num2" layoutX="153.0" layoutY="231.0" prefHeight="25.0" prefWidth="295.0" promptText="Digite apenas números" />
-      <Label layoutX="296.0" layoutY="280.0" text="...">
+      <TextField fx:id="txt_num2" layoutX="153.0" layoutY="197.0" prefHeight="25.0" prefWidth="295.0" promptText="Digite apenas números" />
+      <Label fx:id="resultmultiplo" layoutX="286.0" layoutY="300.0" text="...">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Button fx:id="btn_voltar" layoutX="239.0" layoutY="329.0" mnemonicParsing="false" onAction="#voltar" prefHeight="35.0" prefWidth="122.0" style="-fx-background-radius: 8px;" text="Voltar" />
+      <Button fx:id="btn_voltar" layoutX="230.0" layoutY="345.0" mnemonicParsing="false" onAction="#voltar" prefHeight="35.0" prefWidth="122.0" style="-fx-background-radius: 8px;" text="Voltar" />
       <MenuBar mouseTransparent="true" prefHeight="42.0" prefWidth="600.0">
          <menus>
             <Menu mnemonicParsing="false" text="Multiplos">
@@ -42,5 +42,6 @@
             </Menu>
          </menus>
       </MenuBar>
+      <Button fx:id="btn_calculo" layoutX="230.0" layoutY="246.0" mnemonicParsing="false" onAction="#calculamultiplo" prefHeight="35.0" prefWidth="122.0" style="-fx-background-radius: 8px;" text="Calcular" />
    </children>
 </AnchorPane>
