@@ -2,14 +2,30 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.SenhaController">
    <children>
-      <TextField layoutX="210.0" layoutY="157.0" prefHeight="43.0" prefWidth="181.0" promptText="Insira sua senha" />
+      <TextField fx:id="txt_senha" layoutX="210.0" layoutY="157.0" prefHeight="43.0" prefWidth="181.0" promptText="Insira sua senha" />
       <Button fx:id="btn_entrar" layoutX="240.0" layoutY="235.0" mnemonicParsing="false" onAction="#entrar" prefHeight="36.0" prefWidth="122.0" style="-fx-background-radius: 8px;" text="Entrar" />
       <Label fx:id="lbl_senharesult" layoutX="292.0" layoutY="298.0" text="...." />
       <Button fx:id="btn_voltar" layoutX="236.0" layoutY="343.0" mnemonicParsing="false" onAction="#voltar" prefHeight="36.0" prefWidth="122.0" style="-fx-background-radius: 8px;" text="Voltar" />
+      <MenuBar mouseTransparent="true" prefHeight="42.0" prefWidth="600.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Senha">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+               <graphic>
+                  <Region prefHeight="56.0" prefWidth="0.0" />
+               </graphic>
+            </Menu>
+         </menus>
+      </MenuBar>
    </children>
 </AnchorPane>
