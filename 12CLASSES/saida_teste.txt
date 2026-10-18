@@ -1,0 +1,38 @@
+=== Imagem 1: Loja de roupas ===
+116.91000000000001
+true
+Camisa social: Dorin | Tamanho: M | R$ 129.90
+189.9
+Calca social: Moderna | Tamanho: 42 | R$ 169.90
+42
+233.0
+594.15
+Terno: Elegance | Tamanho: G | R$ 699.00
+
+=== Imagem 2: Ciclismo na trilha ===
+Marcha trocada para 7.
+A bicicleta esta freando.
+Bicicleta Trail Pro | Aro 29 | Marcha atual: 7
+Marina pedalou 8.5 km.
+Percurso moderado recomendado.
+Ciclista: Marina | Idade: 24 | Nivel: intermediario
+2.0
+false
+Trilha: Caminho Verde | 12.0 km | Dificuldade: media
+
+=== Imagem 3: Mascaras ===
+0.32
+Peca feita em mogno, com origem em Africa Ocidental.
+Mascara de madeira | Origem: Africa Ocidental | Madeira: mogno | Altura: 32.0 cm
+158.4
+Mascara pintada | Cor: ocre | Estilo: geometrico | R$ 180.00
+true
+Mascara cerimonial | Peca 03 | Finalidade: cerimonial | Conservacao: boa
+
+=== Imagem 4: Penteados de anime ===
+Curto
+Penteado curto | Cor: castanho | Textura: liso | 8.0 cm
+31.5
+Penteado longo | Cor: prateado | Franja: aberta | 28.0 cm
+20
+Penteado espetado | Cor: loiro | Topete: 7.0 cm | Detalhe: 4

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.MenuController">
+    <children>
+        <Label layoutX="250.0" layoutY="22.0" text="12Classes" />
+        <Label layoutX="130.0" layoutY="56.0" text="Selecione uma classe para abrir a interface:" />
+        <Button layoutX="35.0" layoutY="90.0" prefHeight="34.0" prefWidth="150.0" onAction="#abrirCamisaSocial" text="Camisa Social" />
+        <Button layoutX="225.0" layoutY="90.0" prefHeight="34.0" prefWidth="150.0" onAction="#abrirCalcaSocial" text="Calça Social" />
+        <Button layoutX="415.0" layoutY="90.0" prefHeight="34.0" prefWidth="150.0" onAction="#abrirTerno" text="Terno" />
+        <Button layoutX="35.0" layoutY="145.0" prefHeight="34.0" prefWidth="150.0" onAction="#abrirBicicletaTrilha" text="Bicicleta de Trilha" />
+        <Button layoutX="225.0" layoutY="145.0" prefHeight="34.0" prefWidth="150.0" onAction="#abrirCiclista" text="Ciclista" />
+        <Button layoutX="415.0" layoutY="145.0" prefHeight="34.0" prefWidth="150.0" onAction="#abrirTrilha" text="Trilha" />
+        <Button layoutX="35.0" layoutY="200.0" prefHeight="34.0" prefWidth="150.0" onAction="#abrirMascaraMadeira" text="Máscara de Madeira" />
+        <Button layoutX="225.0" layoutY="200.0" prefHeight="34.0" prefWidth="150.0" onAction="#abrirMascaraPintada" text="Máscara Pintada" />
+        <Button layoutX="415.0" layoutY="200.0" prefHeight="34.0" prefWidth="150.0" onAction="#abrirMascaraCerimonial" text="Máscara Cerimonial" />
+        <Button layoutX="35.0" layoutY="255.0" prefHeight="34.0" prefWidth="150.0" onAction="#abrirPenteadoCurto" text="Penteado Curto" />
+        <Button layoutX="225.0" layoutY="255.0" prefHeight="34.0" prefWidth="150.0" onAction="#abrirPenteadoLongo" text="Penteado Longo" />
+        <Button layoutX="415.0" layoutY="255.0" prefHeight="34.0" prefWidth="150.0" onAction="#abrirPenteadoEspetado" text="Penteado Espetado" />
+        <Label layoutX="165.0" layoutY="330.0" text="Projeto de POO - 12 classes e seus métodos" />
+    </children>
+</AnchorPane>

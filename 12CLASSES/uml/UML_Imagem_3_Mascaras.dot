@@ -1,0 +1,27 @@
+digraph UML {
+  graph [label="Imagem 3 - Mascaras", labelloc="t", fontsize=20, fontname="Arial", bgcolor="white", pad="0.25", nodesep="0.35", ranksep="0.6", splines="ortho"];
+  node [shape=plaintext, fontname="Arial", fontsize=10];
+  rankdir=TB;
+  MascaraMadeira [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#50627A" BGCOLOR="#FFFFFF">
+<TR><TD BGCOLOR="#DCE8F5"><B>MascaraMadeira</B></TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT">- origem: String</TD></TR><TR><TD ALIGN="LEFT">- tipoMadeira: String</TD></TR><TR><TD ALIGN="LEFT">- alturaCm: double</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT">+ calcularAlturaEmMetros(): double</TD></TR><TR><TD ALIGN="LEFT">+ descreverMaterial(): String</TD></TR><TR><TD ALIGN="LEFT">+ mostrarFicha(): String</TD></TR>
+</TABLE>>];
+  MascaraPintada [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#50627A" BGCOLOR="#FFFFFF">
+<TR><TD BGCOLOR="#DCE8F5"><B>MascaraPintada</B></TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT">- corPrincipal: String</TD></TR><TR><TD ALIGN="LEFT">- estilo: String</TD></TR><TR><TD ALIGN="LEFT">- preco: double</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT">+ alterarCor(novaCor: String): void</TD></TR><TR><TD ALIGN="LEFT">+ aplicarDesconto(percentual: double): double</TD></TR><TR><TD ALIGN="LEFT">+ mostrarFicha(): String</TD></TR>
+</TABLE>>];
+  MascaraCerimonial [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#50627A" BGCOLOR="#FFFFFF">
+<TR><TD BGCOLOR="#DCE8F5"><B>MascaraCerimonial</B></TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT">- nome: String</TD></TR><TR><TD ALIGN="LEFT">- finalidade: String</TD></TR><TR><TD ALIGN="LEFT">- estadoConservacao: String</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT">+ atualizarConservacao(novoEstado: String): void</TD></TR><TR><TD ALIGN="LEFT">+ estaBemConservada(): boolean</TD></TR><TR><TD ALIGN="LEFT">+ mostrarFicha(): String</TD></TR>
+</TABLE>>];
+  { rank=same; MascaraMadeira; MascaraPintada; MascaraCerimonial; }
+}
